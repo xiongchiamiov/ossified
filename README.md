@@ -13,6 +13,23 @@ few images of [Wikipe-tan] and set off on my way.
 Oh yeah, the name... You see, we're talking about *O*pen-*S*ource *S*oftware,
 so you might say we're *oss*ifying a project... yeah.
 
+# The Licenses
+
+Here are the licenses Ossified will point you at; the preference is for common
+licenses, and only one for each category.
+
+ -----------------------------------------
+| License      | Copyleft? | Attribution? |
+|--------------|-----------|--------------|
+| GPLv3        |     x     |              |
+| LGPL         |     x     |              |
+| AGPL         |     x     |              |
+| BSD 3-clause |           |              |
+| BSD 2-clause |           |              |
+| Apache       |           |              |
+| WTFPL        |           |              |
+ -----------------------------------------
+
 [Ren'Py]: http://www.renpy.org/
 [Analogue: A Hate Story]: http://ahatestory.com/
 [Wikipe-tan]: http://en.wikipedia.org/wiki/Wikipedia:Wikipe-tan
