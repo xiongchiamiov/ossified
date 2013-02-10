@@ -49,6 +49,7 @@ label copyleft:
             jump decision
         "No":
             w "Not an ideologue, huh?"
+            jump attribution
         "What's copyleft?":
             w "Copyleft is a play on the word copyright."
             w "Essentially, anyone could modify or redestribute [project], but they have to allow you to do the same thing with their modifications."
@@ -56,6 +57,20 @@ label copyleft:
             w "Keep in mind that various copyleft licenses may have additional restrictions, such as being non-profit or requiring a note saying that you are the original author.  We'll get to those details later."
             jump copyleft
     
+    return
+
+label attribution:
+    menu:
+        w "Do you want any project building off of [project] to provide notice
+        somewhere where the code came from?"
+        "Yeah, I'd like some recognition.":
+            w "It's the least they can do, right?"
+        "Nah, it's cool.":
+            w "Aww, you're so selfless!"
+            w "..."
+            w "Are you single?"
+            w "I'm sorry, I shouldn't have asked that.  Where were we?  Ah,
+            that's right."
     return
 
 label decision:
