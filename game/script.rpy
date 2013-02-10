@@ -35,10 +35,20 @@ label copyleft:
         w "[question]"
         "Yes":
             w "Yessir, Mr. Stallman!"
-            $ copyleft = True
+            menu:
+                w "Is this a web site or web application?"
+                "Yes":
+                    $ license = 'AGPL'
+                "No":
+                    menu:
+                        w "Is it a library, then?"
+                        "Yes":
+                            $ license = 'LGPL'
+                        "No":
+                            $ license = 'GPL'
+            jump decision
         "No":
             w "Not an ideologue, huh?"
-            $ copyleft = False
         "What's copyleft?":
             w "Copyleft is a play on the word copyright."
             w "Essentially, anyone could modify or redestribute [project], but they have to allow you to do the same thing with their modifications."
@@ -46,5 +56,9 @@ label copyleft:
             w "Keep in mind that various copyleft licenses may have additional restrictions, such as being non-profit or requiring a note saying that you are the original author.  We'll get to those details later."
             jump copyleft
     
+    return
+
+label decision:
+    w "Alright, I think I know what you want - the [license]!"
     return
 
