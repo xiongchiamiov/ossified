@@ -18,17 +18,23 @@ so you might say we're *oss*ifying a project... yeah.
 Here are the licenses Ossified will point you at; the preference is for common
 licenses, and only one for each category.
 
- -----------------------------------------
-| License      | Copyleft? | Attribution? |
-|--------------|-----------|--------------|
-| GPLv3        |     x     |              |
-| LGPL         |     x     |              |
-| AGPL         |     x     |              |
-| BSD 3-clause |           |              |
-| BSD 2-clause |           |              |
-| Apache       |           |              |
-| WTFPL        |           |              |
- -----------------------------------------
+ -------------------------------------------------------------------------------
+| License      | Copyleft? | Attribution? | Must change name? | State changes?  |
+|--------------|-----------|--------------|-------------------|-----------------|
+| GPLv3        |     x     |      x       |                   |       x         |
+| LGPL         |     x     |      x       |                   |       x         |
+| AGPL         |     x     |      x       |                   |       x         |
+| Apache       |           |      x       |         x         |       x         |
+| Zlib         |           |      x       |         x         |                 |
+| BSD 3-clause |           |      x       |         x         |                 |
+| MIT          |           |      x       |                   |                 |
+| WTFPL        |           |              |                   |                 |
+ -------------------------------------------------------------------------------
+
+The difference between the Zlib and BSD 3-clause licenses is subtle - Zlib
+requires you to change the name of the project if you make any modifications,
+while the BSD license only requires that you not use any names of contributors
+to promote your new version.
 
 [Ren'Py]: http://www.renpy.org/
 [Analogue: A Hate Story]: http://ahatestory.com/
