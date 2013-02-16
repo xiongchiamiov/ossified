@@ -13,7 +13,7 @@ define w = Character('Wikipe-tan', color="#c8ffc8")
 # The game starts here.
 label start:
     show wikipe normal
-    $ firstTime = {'copyleft': True}
+    $ visited = {}
 
     w "Oh, hi there!"
     $ project = renpy.input("I heard you're planning on open-sourcing your new project, uh, what was it called again?") or "the mystery project"
@@ -26,11 +26,11 @@ label start:
     
 label copyleft:
     python:
-        if firstTime['copyleft']:
-            firstTime['copyleft'] = False
-            question = "First off, do you want a copyleft license for %s?" % project
-        else:
+        if visited.get('copyleft'):
             question = "So, how about copyleft?"
+        else:
+            visited['copyleft'] = True
+            question = "First off, do you want a copyleft license for %s?" % project
     menu:
         w "[question]"
         "Yes":
