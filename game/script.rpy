@@ -77,3 +77,4 @@ label decision:
     w "Alright, I think I know what you want - the [license]!"
     return
 
+# vim: expandtab shiftwidth=4 softtabstop=4
