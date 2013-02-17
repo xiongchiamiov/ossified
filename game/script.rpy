@@ -125,6 +125,9 @@ label advertising:
     jump decision
 
 label decision:
+    show wikipe meditating
+    w "Ok, just give me a second..."
+    show wikipe normal
     w "Alright, I think I know what you want - the [license]!"
     return
 
