@@ -101,7 +101,28 @@ label attribution:
                that's right - you don't care about fame."
             $ license = 'WTFPL'
             jump decision
-    return
+    jump advertising
+
+label advertising:
+    if not visited.get('advertising'):
+        w "Something that doesn't occur often to programmers is that they may
+           or may not want to be associated with someone else's project that
+           uses their work."
+        $ visited['advertising'] = True
+    menu:
+        w "If someone uses parts of [project], what would you like them to do?"
+        "Change the name of the project.":
+            w "Yeah, it can be kinda confusing when people don't know which
+               [project] is the real one..."
+            $ license = 'Zlib License'
+        "Just don't mention me.":
+            w "Who knows what evil things someone could do with [project]?
+               Don't tie yourself to an unknown future, I always say."
+            $ license = 'BSD 3-Clause License'
+        "Eh, whatever.  Use the name, use my name - I trust them.":
+            w "I always thought Locke was better than Hobbes."
+            $ license = 'MIT License'
+    jump decision
 
 label decision:
     w "Alright, I think I know what you want - the [license]!"
