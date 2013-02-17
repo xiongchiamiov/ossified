@@ -56,6 +56,25 @@ label copyleft:
             w "Keep in mind that various copyleft licenses may have additional restrictions, such as being non-profit or requiring a note saying that you are the original author.  We'll get to those details later."
             jump copyleft
     
+    jump stateChanges
+
+label stateChanges:
+    if not visited.get('stateChanges'):
+        w "Sometimes building off a project leads to some pretty heavy
+           modification; think about how different Counter-Strike is from
+           Half-Life!"
+        w "These changes can be good or bad, and sometimes people judge the
+           source project by the derivative."
+        $ visited['stateChanges'] = True
+    menu:
+        w "Should child projects of [project] be required to clearly list which
+           things are original, and which are new?"
+        "Sure, that sounds like a good idea.":
+            w "You've got a reputation to protect!"
+            $ license = 'Apache License'
+            jump decision
+        "Who cares?  Maybe they'll make something better than I did.":
+            w "Now that's the spirit of optimism I like!"
     jump attribution
 
 label attribution:
