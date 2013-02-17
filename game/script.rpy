@@ -21,7 +21,8 @@ label start:
         w "Uh, I can keep secrets, but that's ok..."
     else:
         w "Right, [project]."
-    w "Well, let me just ask you a few questions, and then I'll give you some suggestions, alright?"
+    w "Well, let me just ask you a few questions, and then I'll give you some
+       suggestions, alright?"
     jump copyleft
     
 label copyleft:
@@ -51,9 +52,15 @@ label copyleft:
             w "Not an ideologue, huh?"
         "What's copyleft?":
             w "Copyleft is a play on the word copyright."
-            w "Essentially, anyone could modify or redestribute [project], but they have to allow you to do the same thing with their modifications."
-            w "So, if they add some really cool feature, they have to give it back to you so you can use it too!"
-            w "Keep in mind that various copyleft licenses may have additional restrictions, such as being non-profit or requiring a note saying that you are the original author.  We'll get to those details later."
+            w "Essentially, anyone could modify or redestribute [project], but
+               they have to allow you to do the same thing with their
+               modifications."
+            w "So, if they add some really cool feature, they have to give it
+               back to you so you can use it too!"
+            w "Keep in mind that various copyleft licenses may have additional
+               restrictions, such as being non-profit or requiring a note
+               saying that you are the original author.  We'll get to those
+               details later."
             jump copyleft
     
     jump stateChanges
@@ -80,7 +87,7 @@ label stateChanges:
 label attribution:
     menu:
         w "Do you want any project building off of [project] to provide notice
-        somewhere where the code came from?"
+           somewhere where the code came from?"
         "Yeah, I'd like some recognition.":
             w "It's the least they can do, right?"
         "Nah, it's cool.":
@@ -88,7 +95,7 @@ label attribution:
             w "..."
             w "Are you single?"
             w "I'm sorry, I shouldn't have asked that.  Where were we?  Ah,
-            that's right - you don't care about fame."
+               that's right - you don't care about fame."
             $ license = 'WTFPL'
             jump decision
     return
