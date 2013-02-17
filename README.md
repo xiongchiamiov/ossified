@@ -19,16 +19,16 @@ Here are the licenses Ossified will point you at; the preference is for common
 licenses, and only one for each category.
 
  -------------------------------------------------------------------------------
-| License      | Copyleft? | Attribution? | Must change name? | State changes?  |
-|--------------|-----------|--------------|-------------------|-----------------|
-| GPLv3        |     x     |      x       |                   |       x         |
-| LGPL         |     x     |      x       |                   |       x         |
-| AGPL         |     x     |      x       |                   |       x         |
-| Apache       |           |      x       |         x         |       x         |
-| Zlib         |           |      x       |         x         |                 |
-| BSD 3-clause |           |      x       |         x         |                 |
-| MIT          |           |      x       |                   |                 |
-| WTFPL        |           |              |                   |                 |
+| License      | Copyleft? | State changes?  | Must change name? | Attribution? |
+|--------------|-----------|-----------------|-------------------|--------------|
+| GPLv3        |     x     |       x         |                   |      x       |
+| LGPL         |     x     |       x         |                   |      x       |
+| AGPL         |     x     |       x         |                   |      x       |
+| Apache       |           |       x         |         x         |      x       |
+| Zlib         |           |                 |         x         |      x       |
+| BSD 3-clause |           |                 |         x         |      x       |
+| MIT          |           |                 |                   |      x       |
+| WTFPL        |           |                 |                   |              |
  -------------------------------------------------------------------------------
 
 The difference between the Zlib and BSD 3-clause licenses is subtle - Zlib
