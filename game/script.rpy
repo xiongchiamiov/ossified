@@ -1,7 +1,7 @@
-﻿# You can place the script of your game in this file.
+﻿# May you recognize your weaknesses and share your strengths.
+# May you share freely, never taking more than you give.
+# May you find love and love everyone you find.
 
-# Declare images below this line, using the image statement.
-# eg. image eileen happy = "eileen_happy.png"
 image wikipe normal = '317px-Wikipe-tan_full_length.png'
 image wikipe meditating = '412px-Wikipe-tan_meditating.png'
 image wikipe sign = '326px-Wikipe-tan_holding_sign.png'
