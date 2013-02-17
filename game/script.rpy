@@ -88,7 +88,9 @@ label attribution:
             w "..."
             w "Are you single?"
             w "I'm sorry, I shouldn't have asked that.  Where were we?  Ah,
-            that's right."
+            that's right - you don't care about fame."
+            $ license = 'WTFPL'
+            jump decision
     return
 
 label decision:
