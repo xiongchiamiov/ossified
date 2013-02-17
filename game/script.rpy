@@ -36,18 +36,7 @@ label copyleft:
         w "[question]"
         "Yes":
             w "Yessir, Mr. Stallman!"
-            menu:
-                w "Is this a web site or web application?"
-                "Yes":
-                    $ license = 'AGPL'
-                "No":
-                    menu:
-                        w "Is it a library, then?"
-                        "Yes":
-                            $ license = 'LGPL'
-                        "No":
-                            $ license = 'GPL'
-            jump decision
+            jump gpl
         "No":
             w "Not an ideologue, huh?"
         "What's copyleft?":
@@ -64,6 +53,20 @@ label copyleft:
             jump copyleft
     
     jump stateChanges
+
+label gpl:
+    menu:
+        w "Is this a web site or web application?"
+        "Yes":
+            $ license = 'AGPL'
+        "No":
+            menu:
+                w "Is it a library, then?"
+                "Yes":
+                    $ license = 'LGPL'
+                "No":
+                    $ license = 'GPL'
+    jump decision
 
 label stateChanges:
     if not visited.get('stateChanges'):
