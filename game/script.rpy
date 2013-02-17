@@ -49,7 +49,6 @@ label copyleft:
             jump decision
         "No":
             w "Not an ideologue, huh?"
-            jump attribution
         "What's copyleft?":
             w "Copyleft is a play on the word copyright."
             w "Essentially, anyone could modify or redestribute [project], but they have to allow you to do the same thing with their modifications."
@@ -57,7 +56,7 @@ label copyleft:
             w "Keep in mind that various copyleft licenses may have additional restrictions, such as being non-profit or requiring a note saying that you are the original author.  We'll get to those details later."
             jump copyleft
     
-    return
+    jump attribution
 
 label attribution:
     menu:
