@@ -13,6 +13,15 @@ few images of [Wikipe-tan] and set off on my way.
 Oh yeah, the name... You see, we're talking about *O*pen-*S*ource *S*oftware,
 so you might say we're *oss*ifying a project... yeah.
 
+# Installation
+
+1. [Download Ren'Py](http://www.renpy.org/latest.html).
+2. Extract the downloaded file.
+3. [Download ossified](https://github.com/xiongchiamiov/ossified/archive/master.zip).
+4. Extract it into the Ren'Py folder.
+5. Run Ren'Py, select "ossified-master" in the project list, and hit "Launch
+   Project".
+
 # The Licenses
 
 Here are the licenses Ossified will point you at; the preference is for common
